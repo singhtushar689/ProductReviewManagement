@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Product Review Management");
+            //Console.WriteLine("Welcome to Product Review Management");
             List<ProductReview> productReview = new List<ProductReview>();
 
             {
@@ -28,8 +28,9 @@
             //    Console.WriteLine("ProductId: " + List.ProductId + "UserId :" + List.UserId + "Rating :" + List.Rating + "Review:" + List.Review + "isLike:" + List.isLike);
             //}
 
-            Management management = new Management();
-            management.TopRecords(productReview);
+           // Management management = new Management();
+            Management.TopRecords(productReview);    //UC1
+            //management.SelectedRecords(productReview); //UC2
         }
     }
 }
